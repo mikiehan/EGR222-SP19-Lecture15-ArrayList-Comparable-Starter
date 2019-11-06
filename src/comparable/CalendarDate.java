@@ -25,16 +25,7 @@ public class CalendarDate {
     }
     
     public String toString() {
-        String result = year + "/";
-        if (month < 10) {
-            result += "0";
-        }
-        result += month + "/";
-        if (day < 10) {
-            result += "0";
-        }
-        result += day;
-        return result;
+        return year + "/" + String.format("%02d", month) + "/" + String.format("%02d", day);
     }
     
 // YOUR CODE GOES HERE
